@@ -1,0 +1,58 @@
+{
+    "name": "ValleySentinelInput",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "0e3d6da7-1cc7-491c-bd88-5227179b8282",
+            "actions": [
+                {"name":"Aim","type":"Value","id":"9df2365b-dc29-4644-a08c-86af1aa9622f","expectedControlType":"Vector2","processors":"","interactions":"","initialStateCheck":true},
+                {"name":"Fire","type":"Button","id":"31ef0135-110e-48da-993b-46c62adf0479","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":false},
+                {"name":"Reload","type":"Button","id":"cc841ab7-0bde-44f7-9965-17b478cc63ac","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":false},
+                {"name":"SwitchWeapon","type":"Button","id":"b04e188a-5bb9-48dd-a7e8-aa9c115938c3","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":false},
+                {"name":"SpecialWeapon","type":"Button","id":"2a6e3f0a-91d4-460e-81d8-3c15ebd63d38","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":false},
+                {"name":"Pause","type":"Button","id":"a701c45a-fd1c-442b-b320-6287869ccb3a","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":false}
+            ],
+            "bindings": [
+                {"name":"","id":"855fb679-4504-4671-b877-bb2addb5656f","path":"<Gamepad>/rightStick","interactions":"","processors":"StickDeadzone","groups":"Mobile;Gamepad","action":"Aim","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"760b3ea0-cfb7-4a85-a69b-96292a62b10a","path":"<Mouse>/delta","interactions":"","processors":"ScaleVector2(x=0.05,y=0.05)","groups":"Editor","action":"Aim","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"5cd882d4-d523-43bf-ac70-f5cfc8efe086","path":"<Gamepad>/leftTrigger","interactions":"Press","processors":"","groups":"Mobile;Gamepad","action":"Fire","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"4623de17-6d92-41bb-80bd-b58cbdf39c04","path":"<Mouse>/leftButton","interactions":"Press","processors":"","groups":"Editor","action":"Fire","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"31071f62-e7c3-46e3-9fd9-70d24a6efe27","path":"<Gamepad>/buttonWest","interactions":"Press","processors":"","groups":"Mobile;Gamepad","action":"Reload","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"ebf61ff2-d587-427a-b2c9-ee915d529af1","path":"<Keyboard>/r","interactions":"Press","processors":"","groups":"Editor","action":"Reload","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"f156456d-dede-463c-91de-83882d60f517","path":"<Gamepad>/buttonNorth","interactions":"Press","processors":"","groups":"Mobile;Gamepad","action":"SwitchWeapon","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"a21bc71b-98c3-44db-9c08-a273bdf24f11","path":"<Keyboard>/q","interactions":"Press","processors":"","groups":"Editor","action":"SwitchWeapon","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"3585e5b0-f85f-4cf6-9b70-573be6464890","path":"<Gamepad>/buttonSouth","interactions":"Press","processors":"","groups":"Mobile;Gamepad","action":"SpecialWeapon","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"ee532899-cc79-4057-a5b1-10bb2a01a5f8","path":"<Keyboard>/e","interactions":"Press","processors":"","groups":"Editor","action":"SpecialWeapon","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"0d9169bf-14be-4e48-b904-52eb4b45bc74","path":"<Gamepad>/start","interactions":"Press","processors":"","groups":"Mobile;Gamepad","action":"Pause","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"4cc0db50-c3f2-4112-8184-e80188d45aa5","path":"<Keyboard>/escape","interactions":"Press","processors":"","groups":"Editor","action":"Pause","isComposite":false,"isPartOfComposite":false}
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "1ae2cf37-ecac-4671-ab2f-d1c8f0175a33",
+            "actions": [
+                {"name":"Navigate","type":"PassThrough","id":"da149f29-1f1b-43e2-8781-943151ee0e42","expectedControlType":"Vector2","processors":"","interactions":"","initialStateCheck":false},
+                {"name":"Submit","type":"Button","id":"aebbe52d-907d-4617-bff0-a72715176de5","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":false},
+                {"name":"Cancel","type":"Button","id":"1d9429ec-8323-43cc-8a63-d7e6ab32a1e0","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":false},
+                {"name":"Point","type":"PassThrough","id":"355b5046-0c98-4667-b822-8fc669280726","expectedControlType":"Vector2","processors":"","interactions":"","initialStateCheck":true},
+                {"name":"Click","type":"PassThrough","id":"4a51a220-47db-41b0-91bc-e4a6d5b04ed2","expectedControlType":"Button","processors":"","interactions":"","initialStateCheck":true}
+            ],
+            "bindings": [
+                {"name":"","id":"296cf4bd-9e83-4f75-8a24-f8185c05e94f","path":"<Gamepad>/leftStick","interactions":"","processors":"","groups":"Mobile;Gamepad","action":"Navigate","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"62a8c23d-bb31-455d-ac48-103ac99d5906","path":"<Gamepad>/buttonSouth","interactions":"Press","processors":"","groups":"Mobile;Gamepad","action":"Submit","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"7b3ff9bf-d4af-4ee6-b07e-0eac5e63b0d1","path":"<Keyboard>/enter","interactions":"Press","processors":"","groups":"Editor","action":"Submit","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"e5ef1dce-ee32-47aa-9de8-c041e65f3643","path":"<Gamepad>/buttonEast","interactions":"Press","processors":"","groups":"Mobile;Gamepad","action":"Cancel","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"5ce57089-630d-430f-8672-b0f74a2ab982","path":"<Keyboard>/escape","interactions":"Press","processors":"","groups":"Editor","action":"Cancel","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"4f0dabbe-2c55-452e-9a8b-950398896e48","path":"<Touchscreen>/touch*/position","interactions":"","processors":"","groups":"Mobile","action":"Point","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"8a97b0cd-3985-402c-85eb-53f1959ba3c4","path":"<Mouse>/position","interactions":"","processors":"","groups":"Editor","action":"Point","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"970be984-1729-456f-b07e-9e6a13814129","path":"<Touchscreen>/touch*/press","interactions":"","processors":"","groups":"Mobile","action":"Click","isComposite":false,"isPartOfComposite":false},
+                {"name":"","id":"ee8668d9-749e-466b-b985-022a7ee5ce6d","path":"<Mouse>/leftButton","interactions":"","processors":"","groups":"Editor","action":"Click","isComposite":false,"isPartOfComposite":false}
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {"name":"Mobile","bindingGroup":"Mobile","devices":[{"devicePath":"<Touchscreen>","isOptional":false,"isOR":false},{"devicePath":"<Gamepad>","isOptional":false,"isOR":false}]},
+        {"name":"Editor","bindingGroup":"Editor","devices":[{"devicePath":"<Keyboard>","isOptional":false,"isOR":false},{"devicePath":"<Mouse>","isOptional":false,"isOR":false}]},
+        {"name":"Gamepad","bindingGroup":"Gamepad","devices":[{"devicePath":"<Gamepad>","isOptional":false,"isOR":false}]}
+    ]
+}
